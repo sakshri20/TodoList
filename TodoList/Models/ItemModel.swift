@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ItemModel: Identifiable {
+struct ItemModel: Identifiable, Codable {
     var id: String = UUID().uuidString
     let title: String
     var isCompleted: Bool
