@@ -11,6 +11,7 @@ struct ItemModel: Identifiable, Codable {
     var id: String = UUID().uuidString
     let title: String
     var isCompleted: Bool
+    let createdAt: Date
     
     mutating func updateStatus() {
         self.isCompleted = !isCompleted
